@@ -1,0 +1,20 @@
+{
+  "CS3201": {
+    "block": "A",
+    "room": "101",
+    "bench": 1,
+    "seat": "Left"
+  },
+  "EC3201": {
+    "block": "A",
+    "room": "101",
+    "bench": 1,
+    "seat": "Right"
+  },
+  "DS3201": {
+    "block": "A",
+    "room": "101",
+    "bench": 2,
+    "seat": "Left"
+  }
+}

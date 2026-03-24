@@ -1,0 +1,5 @@
+{
+  "name": "Smart Exam Seating Planner",
+  "description": "Advanced exam seating generation system with round-robin branch distribution and dynamic room management.",
+  "requestFramePermissions": []
+}
