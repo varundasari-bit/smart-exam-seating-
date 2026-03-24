@@ -1,9 +1,12 @@
 import express from 'express';
 import path from 'path';
 import fs from 'fs';
+import cors from 'cors';   // ✅ ADD HERE
 import { createServer as createViteServer } from 'vite';
 
 const app = express();
+
+app.use(cors());           // ✅ ADD HERE
 app.use(express.json());
 
 const DATA_FILE = path.join(process.cwd(), 'data.json');
