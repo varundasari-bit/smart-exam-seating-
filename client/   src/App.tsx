@@ -52,7 +52,7 @@ export default function App() {
     setError('');
     setSuccess('');
     try {
-      const res = await fetch('/api/generate-seating', {
+      const res = await fetch( 'http://localhost:3000/api/generate-seating', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ branches, rooms }),
@@ -75,7 +75,7 @@ export default function App() {
     setSearchResult(null);
     if (!rollQuery) return;
     try {
-      const res = await fetch(`/api/seat/${rollQuery.toUpperCase()}`);
+      const res = await fetch(`http://localhost:3000/api/seat/${rollQuery.toUpperCase()}`);
       if (res.ok) {
         const data = await res.json();
         setSearchResult(data);
